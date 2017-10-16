@@ -16,6 +16,7 @@
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QListWidget>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -27,6 +28,8 @@ public:
     QLabel *studentName;
     QLabel *studentDOB;
     QLabel *studentClass;
+    QPushButton *pushButton;
+    QPushButton *pushButton_2;
 
     void setupUi(QWidget *MyStudens)
     {
@@ -45,6 +48,12 @@ public:
         studentClass = new QLabel(MyStudens);
         studentClass->setObjectName(QStringLiteral("studentClass"));
         studentClass->setGeometry(QRect(540, 30, 141, 31));
+        pushButton = new QPushButton(MyStudens);
+        pushButton->setObjectName(QStringLiteral("pushButton"));
+        pushButton->setGeometry(QRect(180, 100, 75, 23));
+        pushButton_2 = new QPushButton(MyStudens);
+        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
+        pushButton_2->setGeometry(QRect(400, 100, 75, 23));
 
         retranslateUi(MyStudens);
 
@@ -57,6 +66,8 @@ public:
         studentName->setText(QApplication::translate("MyStudens", "Name", nullptr));
         studentDOB->setText(QApplication::translate("MyStudens", "DOB", nullptr));
         studentClass->setText(QApplication::translate("MyStudens", "Class", nullptr));
+        pushButton->setText(QApplication::translate("MyStudens", "Them", nullptr));
+        pushButton_2->setText(QApplication::translate("MyStudens", "Xoa", nullptr));
     } // retranslateUi
 
 };
