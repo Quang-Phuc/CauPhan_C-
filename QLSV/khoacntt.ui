@@ -78,7 +78,7 @@
     <string>thông báo</string>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -112,7 +112,11 @@
        <widget class="QLineEdit" name="taikhoan"/>
       </item>
       <item>
-       <widget class="QLineEdit" name="matkhau"/>
+       <widget class="QLineEdit" name="matkhau">
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+       </widget>
       </item>
      </layout>
     </item>

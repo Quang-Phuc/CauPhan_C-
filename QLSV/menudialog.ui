@@ -47,12 +47,12 @@
     <rect>
      <x>0</x>
      <y>100</y>
-     <width>121</width>
+     <width>131</width>
      <height>91</height>
     </rect>
    </property>
    <property name="text">
-    <string>TRANG CHỦ</string>
+    <string>DANH SÁCH MÔN HỌC</string>
    </property>
   </widget>
   <widget class="QPushButton" name="quanlythongtin">

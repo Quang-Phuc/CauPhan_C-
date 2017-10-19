@@ -15,6 +15,9 @@ public:
     explicit quanlythongtin(QWidget *parent = 0);
     ~quanlythongtin();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::quanlythongtin *ui;
 };

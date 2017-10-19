@@ -25,10 +25,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        quanlysinhvien.cpp
+        quanlysinhvien.cpp \
+    menudialog.cpp
 
 HEADERS += \
-        quanlysinhvien.h
+        quanlysinhvien.h \
+    menudialog.h
 
 FORMS += \
         quanlysinhvien.ui

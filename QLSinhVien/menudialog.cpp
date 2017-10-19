@@ -1,5 +1,5 @@
 #include "menudialog.h"
-#include "ui_menudialog.h"
+
 
 MenuDialog::MenuDialog(QWidget *parent) :
     QDialog(parent),

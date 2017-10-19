@@ -2,14 +2,14 @@
 #include "ui_khoacntt.h"
 #include <QMessageBox>
 #include "menudialog.h"
+#include "khoacntt.h"
 KhoaCNTT::KhoaCNTT(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::KhoaCNTT)
 {
     ui->setupUi(this);
-     mydb=QSqlDatabase ::addDatabase("QSQLITE");
-    mydb.setDatabaseName("E:/Cau_Phan/Quanlysinhvien.sqlite");
-    if(!mydb.open())
+
+    if(!connOpen())
         ui->thongbao->setText("Faile to open the database");
     else
         ui->thongbao->setText("Connetcted...");
@@ -31,7 +31,7 @@ void KhoaCNTT::on_pushButton_clicked()
     QString TaiKhoan, Matkhau;
     TaiKhoan=ui->taikhoan->text();
     Matkhau=ui->matkhau->text();
-    if(!mydb.isOpen())
+    if(!connOpen())
     {
         qDebug()<<"Failed to open the database";
         return;
@@ -40,8 +40,11 @@ void KhoaCNTT::on_pushButton_clicked()
 
     }
 
+    connOpen();
     QSqlQuery qry;
-    if(qry.exec("select * from Dangnhap where TaiKhoan='"+TaiKhoan +"'and Matkhau='"+Matkhau+"'" ))
+    qry.prepare("select * from Dangnhap where TaiKhoan='"+TaiKhoan +"'and Matkhau='"+Matkhau+"'");
+
+    if(qry.exec( ))
     {
         int count=0;
         while(qry.next())
@@ -51,6 +54,10 @@ void KhoaCNTT::on_pushButton_clicked()
         if(count==1)
         {
             ui->thongbao->setText("Dang nhap thanh cong");
+
+            connClose();
+
+            this->hide();
             menuDialog menudialog;
             menudialog.setModal(true);
             menudialog.exec();

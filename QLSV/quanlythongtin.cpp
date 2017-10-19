@@ -1,5 +1,6 @@
 #include "quanlythongtin.h"
 #include "ui_quanlythongtin.h"
+#include "themthongtin.h"
 
 quanlythongtin::quanlythongtin(QWidget *parent) :
     QDialog(parent),
@@ -11,4 +12,12 @@ quanlythongtin::quanlythongtin(QWidget *parent) :
 quanlythongtin::~quanlythongtin()
 {
     delete ui;
+}
+
+void quanlythongtin::on_pushButton_clicked()
+{
+    themthongtin themtt;
+    themtt.setModal(true);
+    themtt.exec();
+
 }
