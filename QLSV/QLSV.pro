@@ -31,7 +31,8 @@ SOURCES += \
     quanlyketquahoctap.cpp \
     quanlylophoc.cpp \
     hoso.cpp \
-    themthongtin.cpp
+    themthongtin.cpp \
+    themlophoc.cpp
 
 HEADERS += \
         khoacntt.h \
@@ -40,7 +41,8 @@ HEADERS += \
     quanlyketquahoctap.h \
     quanlylophoc.h \
     hoso.h \
-    themthongtin.h
+    themthongtin.h \
+    themlophoc.h
 
 FORMS += \
         khoacntt.ui \
@@ -49,4 +51,5 @@ FORMS += \
     quanlyketquahoctap.ui \
     quanlylophoc.ui \
     hoso.ui \
-    themthongtin.ui
+    themthongtin.ui \
+    themlophoc.ui

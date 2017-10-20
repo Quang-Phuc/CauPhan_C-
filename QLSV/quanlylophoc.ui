@@ -55,21 +55,7 @@
     <item>
      <widget class="QPushButton" name="pushButton">
       <property name="text">
-       <string>Thêm</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="pushButton_2">
-      <property name="text">
-       <string>Sửa</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="pushButton_3">
-      <property name="text">
-       <string>Xoá</string>
+       <string>Lựa chọn</string>
       </property>
      </widget>
     </item>

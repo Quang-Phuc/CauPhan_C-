@@ -1,5 +1,6 @@
 #include "quanlylophoc.h"
 #include "ui_quanlylophoc.h"
+#include "themlophoc.h"
 
 quanlylophoc::quanlylophoc(QWidget *parent) :
     QDialog(parent),
@@ -11,4 +12,12 @@ quanlylophoc::quanlylophoc(QWidget *parent) :
 quanlylophoc::~quanlylophoc()
 {
     delete ui;
+}
+
+void quanlylophoc::on_pushButton_clicked()
+{
+    themlophoc themlh;
+    themlh.setModal(true);
+    themlh.exec();
+
 }

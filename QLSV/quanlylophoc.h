@@ -15,6 +15,9 @@ public:
     explicit quanlylophoc(QWidget *parent = 0);
     ~quanlylophoc();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::quanlylophoc *ui;
 };
