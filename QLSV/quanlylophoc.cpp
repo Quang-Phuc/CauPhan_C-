@@ -16,8 +16,8 @@ quanlylophoc::~quanlylophoc()
 
 void quanlylophoc::on_pushButton_clicked()
 {
-    themlophoc themlh;
-    themlh.setModal(true);
-    themlh.exec();
+   // themlophoc themlh;
+   // themlh.setModal(true);
+  //  themlh.exec();
 
 }

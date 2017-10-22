@@ -39,8 +39,6 @@ void KhoaCNTT::on_pushButton_clicked()
 
 
     }
-
-    connOpen();
     QSqlQuery qry;
     qry.prepare("select * from Dangnhap where TaiKhoan='"+TaiKhoan +"'and Matkhau='"+Matkhau+"'");
 

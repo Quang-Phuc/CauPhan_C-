@@ -16,8 +16,8 @@ quanlythongtin::~quanlythongtin()
 
 void quanlythongtin::on_pushButton_clicked()
 {
-    themthongtin themtt;
-    themtt.setModal(true);
-    themtt.exec();
+  //  themthongtin themtt;
+    //themtt.setModal(true);
+    //themtt.exec();
 
 }

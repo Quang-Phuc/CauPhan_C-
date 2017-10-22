@@ -4,6 +4,8 @@
 #include"quanlyketquahoctap.h"
 #include"quanlylophoc.h"
 #include "hoso.h"
+#include"themlophoc.h"
+#include "themthongtin.h"
 
 menuDialog::menuDialog(QWidget *parent) :
     QDialog(parent),
@@ -27,9 +29,15 @@ void menuDialog::on_quanlythongtin_clicked()
   //  menuDialog menudialog;
     //menudialog.setModal(true);
     //menudialog.exec();
-    quanlythongtin qlthongtin;
-    qlthongtin.setModal(true);
-    qlthongtin.exec();
+   // quanlythongtin qlthongtin;
+   // qlthongtin.setModal(true);
+   // qlthongtin.exec();
+
+    themthongtin themtt;
+    themtt.setModal(true);
+    themtt.exec();
+
+
 }
 
 void menuDialog::on_quanlyketquahoctap_clicked()
@@ -37,13 +45,18 @@ void menuDialog::on_quanlyketquahoctap_clicked()
     quanlyketquahoctap qlketquahoctap;
     qlketquahoctap.setModal(true);
     qlketquahoctap.exec();
+
 }
 
 void menuDialog::on_quanlythongtinlophoc_clicked()
 {
-   quanlylophoc qllophoc;
-   qllophoc.setModal(true);
-   qllophoc.exec();
+  // quanlylophoc qllophoc;
+  // qllophoc.setModal(true);
+  // qllophoc.exec();
+
+   themlophoc themlh;
+   themlh.setModal(true);
+   themlh.exec();
 }
 
 void menuDialog::on_hoso_clicked()

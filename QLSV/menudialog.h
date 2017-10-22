@@ -16,6 +16,7 @@ public:
     ~menuDialog();
 
 private slots:
+
     void on_trangchu_clicked();
 
     void on_quanlythongtin_clicked();
